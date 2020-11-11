@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "h56.hvosting.ua",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "flower_shop",
+            "database": "flower_shop",
+            "username": "UzhKeksy",
+            "password": "84FFKeW5"
+        }
+    ]
+}
