@@ -6,9 +6,9 @@
             },
             "previewLimit": 50,
             "server": "h56.hvosting.ua",
-            "port": 3306,
-            "driver": "MySQL",
-            "name": "flower_shop",
+            "port": 3260,
+            "driver": "MariaDB",
+            "name": "flowers_shop (remote)",
             "database": "flower_shop",
             "username": "UzhKeksy",
             "password": "84FFKeW5"
