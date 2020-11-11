@@ -19,7 +19,7 @@ Stady project to learn php_mysql
 Пароль: 84FFKeW5
 
 Підключення до бази даних через php скрипт
-$mysql =  mysqli_connect('mppidea.com.ua', 'UzhKeksy', '84FFKeW5', 'flower_shop', 3260);
+$mysql =  mysqli_connect('h56.hvosting.ua', 'UzhKeksy', '84FFKeW5', 'flower_shop', 3260);
 if (mysqli_connect_errno($mysql)) {
     echo "Error connection : " . mysqli_connect_errno($mysql) . " " . mysqli_connect_error($mysql);
 }
