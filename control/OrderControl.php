@@ -1,21 +1,14 @@
 <?php
-require_once '../butstrap.php';
+require_once 'bootstrap.php';
 
 class OrderControl
 {
-    protected $orders = array();
-
-    public function __construct($orders)
-    {
-        $this->orders[] = $orders;
-    }
-
 
     public function addNewOrder($id, OrderStatus $status, User $client, User $reciver, $date, $dateSendPlan, $dateSend)
     {
         $orderList = $this->getOrders();
         $newOrder = new Order($id, $status, $client, $reciver, $date, $dateSendPlan, $dateSend);
-        array_push($orderList,$newOrder);
+        array_push($orderList, $newOrder);
         $this->orders = $orderList;
     }
 
@@ -24,22 +17,21 @@ class OrderControl
      */
     public function getOrders()
     {
-        $connection = new Connection();
-        $connection.connect();
+        $connection = new DBConnection;
+        $result = $connection->query("SELECT * FROM `order`;");
+        if (is_a($result, 'mysqli_result')) {
+            $connection->close();
+            return $result;
 
-        return $this->orders;
-    }
+            // dump result set 
+            //dd($result->num_rows, 'var_dump', false);
+            //dd($result->fetch_all());
 
-    /**
-     * Set the value of orders
-     *
-     * @return  self
-     */
+            /* очищаем результирующий набор */
+            //$result->close();
 
-    public function setOrders($orders)
-    {
-        $this->orders[] = $orders;
-
-        return $this;
+        }
+        $connection->close();
+        return false;
     }
 }
