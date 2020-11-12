@@ -6,7 +6,7 @@ class ContactInformation
     protected ContactInformationType $contactInformtionType;
     protected $contact;
 
-    public function __construct($id, User $user, ContactInformationType $contactInformtionType, $contact)
+    public function __construct($id = null, User $user, ContactInformationType $contactInformtionType, $contact)
     {
         $this->id = $id;
         $this->user = $user;

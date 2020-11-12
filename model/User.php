@@ -9,7 +9,7 @@ class User
 
     protected string $password;
 
-    public function __construct(int $id, UserRool $rool, string $logit, string $password)
+    public function __construct(int $id = null, UserRool $rool, string $logit, string $password)
     {
         $this->id = $id;
         $this->rool = $rool;

@@ -6,7 +6,7 @@ class Payment
     protected $payment;
     protected PaymentType $paymentType;
 
-    public function __construct($id, $date, $payment,PaymentType $paymentType)
+    public function __construct($id = null, $date, $payment,PaymentType $paymentType)
     {
         $this->id = $id;
         $this->date = $date;

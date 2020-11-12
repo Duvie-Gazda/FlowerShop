@@ -7,7 +7,7 @@ class ProductFeedback
     protected int $stars;
     protected string $description;
 
-    public function __construct(int $id, Product $product, User $client, int $stars, string $description)
+    public function __construct(int $id = null, Product $product, User $client, int $stars, string $description)
     {
         $this->id = $id;
         $this->product_id = $product;

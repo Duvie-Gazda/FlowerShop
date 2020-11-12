@@ -7,7 +7,7 @@ class Product
     private string $discription;
     private float $price;
 
-    public function __construct($id,ProductCategory $category, $name, $discription, $price)
+    public function __construct($id = null,ProductCategory $category, $name, $discription, $price)
     {
         $this->id = $id;
         $this->category = $category;

@@ -5,7 +5,7 @@ class ContactInformationType
 
     protected $name;
 
-    public function __construct($id, $property)
+    public function __construct($id = null, $property)
     {
         $this->id = $id;
         $this->property = $property;

@@ -7,7 +7,7 @@ class OrderProduct
 
     protected Product $product;
 
-    public function __construct($id, Order $order, Product $product)
+    public function __construct($id = null, Order $order, Product $product)
     {
         $this->id = $id;
         $this->order = $order;

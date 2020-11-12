@@ -16,7 +16,7 @@ class Order
 
     protected $dateSend;
 
-    public function __construct($id, OrderStatus $status, User $client,User $reciver, $date, $dateSendPlan, $dateSend)
+    public function __construct($id = null, OrderStatus $status, User $client,User $reciver, $date, $dateSendPlan, $dateSend)
     {
         $this->id = $id;
         $this->status = $status;

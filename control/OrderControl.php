@@ -1,5 +1,5 @@
 <?php
-require_once "../bootstrap.php";
+require_once '../butstrap.php';
 
 class OrderControl
 {
@@ -9,6 +9,7 @@ class OrderControl
     {
         $this->orders[] = $orders;
     }
+
 
     public function addNewOrder($id, OrderStatus $status, User $client, User $reciver, $date, $dateSendPlan, $dateSend)
     {
@@ -23,6 +24,9 @@ class OrderControl
      */
     public function getOrders()
     {
+        $connection = new Connection();
+        $connection.connect();
+
         return $this->orders;
     }
 

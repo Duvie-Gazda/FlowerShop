@@ -22,5 +22,5 @@ require_once "model/User.php";
 require_once "model/UserRool.php";
 
 //control
-require_once "control/ConectionDB.php";
+require_once "control/ConnectionDB.php";
 require_once "control/OrderControl.php";

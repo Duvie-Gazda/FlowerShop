@@ -5,7 +5,7 @@ class ProductImage
     protected Product $product;
     protected string $image;
 
-    public function __construct(int $id, Product $product, string $image)
+    public function __construct(int $id = null, Product $product, string $image)
     {
         $this->id = $id;
         $this->product = $product;
