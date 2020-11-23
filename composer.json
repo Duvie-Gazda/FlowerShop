@@ -1,18 +1,15 @@
 {
-    "name": "thecodeholic/phpmvc-framework",
+    "name": "david/php-mvc-framework",
     "authors": [
         {
-            "name": "Zura Sekhniashvili",
-            "email": "zurasekhniashvili@gmail.com"
+            "name": "Duvi-Gazda",
+            "email": "gazda.haimdavid@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "app\\": "."
+            "app\\": "application/"
         }
     },
-    "require": {
-        "vlucas/phpdotenv": "^5.0",
-        "thecodeholic/php-mvc-core": "^v1.0.4"
-    }
+    "require": {}
 }
